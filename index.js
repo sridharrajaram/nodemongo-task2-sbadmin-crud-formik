@@ -3,7 +3,8 @@ const app = express();
 const cors = require('cors');
 const mongodb = require('mongodb');
 const mongoClient = mongodb.MongoClient;
-const url = "mongodb://localhost:27017" //for local db storage
+/* const url = "mongodb://localhost:27017" //for local db storage */
+const url = "mongodb+srv://sridharrajaram:mdBsb@dmin@cluster0.eejhy.mongodb.net?retryWrites=true&w=majority"
 
 const PORT = process.env.PORT || 3001;
 
