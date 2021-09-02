@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3001
 
 // to avoid cors error
 app.use(cors({
-    "Access-Control-Allow-Origin": "*"
+    Origin: "*"
 }))
 
 //express.json() middleware will extract the body from request and store it in req.body variable
