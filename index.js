@@ -9,7 +9,9 @@ const url = "mongodb+srv://sridharrajaram:mdBsb@dmin@cluster0.eejhy.mongodb.net?
 const PORT = process.env.PORT || 3001
 
 // to avoid cors error
-app.use(cors())
+app.use(cors({
+    "Access-Control-Allow-Origin": "*"
+}))
 
 //express.json() middleware will extract the body from request and store it in req.body variable
 app.use(express.json()) 
