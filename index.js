@@ -6,7 +6,7 @@ const mongoClient = mongodb.MongoClient;
 
 const url = "mongodb+srv://sridharrajaram:mdBsb@dmin@cluster0.eejhy.mongodb.net?retryWrites=true&w=majority"
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3001
 
 // to avoid cors error
 app.use(cors({
