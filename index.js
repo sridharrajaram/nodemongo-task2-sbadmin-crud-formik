@@ -17,7 +17,7 @@ app.use(cors({
 //express.json() middleware will extract the body from request and store it in req.body variable
 app.use(express.json()) 
 
-/****User Section******* */
+/****User Section********/
 
 app.get("/users",async function(req,res){
 
