@@ -37,7 +37,7 @@ app.get("/users",async function(req,res){
         res.json(data) //reply with data
 
     } catch (error) {
-        console.log(error.res.data);
+        console.log(error);
         res.status(500).json({
             message: "something went wrong"
         })
