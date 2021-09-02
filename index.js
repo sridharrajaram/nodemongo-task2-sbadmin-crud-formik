@@ -38,6 +38,7 @@ app.get("/users",async function(req,res){
         res.json(data) //reply with data
 
     } catch (error) {
+        console.log(error);
         res.status(500).json({
             message: "something went wrong"
         })
@@ -66,6 +67,7 @@ app.post("/create-user",async function(req, res){
             message: "user added sucessfully"
         })
     } catch (error) {
+        console.log(error);
         res.status(500).json({
             message: "something went wrong"
         })
@@ -122,6 +124,7 @@ app.put("/update-user/:id",async function(req,res){
             message: "User's data updated sucessfully"
         })
     } catch (error) {
+        console.log(error);
         res.status(500).json({
             message: "something went wrong"
         })
@@ -150,6 +153,7 @@ app.delete("/delete-user/:id",async function(req,res){
             message: "User deleted sucessfully"
         })
     } catch (error) {
+        console.log(error);
         res.status(500).json({
             message: "something went wrong"
         })
