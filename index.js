@@ -4,7 +4,7 @@ const cors = require('cors');
 const mongodb = require('mongodb');
 const mongoClient = mongodb.MongoClient;
 
-const url = "mongodb+srv://sridharrajaram:mdBsadmin@cluster0.eejhy.mongodb.net?retryWrites=true&w=majority"
+const url = "mongodb+srv://sbadmin:Admin123@cluster0.uvvef.mongodb.net/?retryWrites=true&w=majority"
 
 const PORT = process.env.PORT || 3001
 
